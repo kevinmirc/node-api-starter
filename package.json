@@ -1,0 +1,34 @@
+{
+  "name": "sample app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ./",
+    "build": "npm run lint && rm -rf ./dist && ./node_modules/.bin/babel src --out-dir dist",
+    "prestart": "npm run build",
+    "start": "nodemon dist/app.js --watch src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "foreman": "^2.0.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "kcors": "^2.2.1",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-rest-router": "^1.0.1",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.12.3"
+  }
+}
