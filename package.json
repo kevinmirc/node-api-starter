@@ -7,7 +7,7 @@
     "lint": "./node_modules/.bin/eslint ./",
     "build": "npm run lint && rm -rf ./dist && ./node_modules/.bin/babel src --out-dir dist",
     "prestart": "npm run build",
-    "start": "nodemon dist/app.js --watch src"
+    "start": "./node_modules/.bin/nf run nodemon dist/app.js -- --watch src"
   },
   "author": "",
   "license": "ISC",
