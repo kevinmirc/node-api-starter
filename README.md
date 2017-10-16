@@ -2,7 +2,7 @@
 
 ```bash
 #Clone into current dir:
-git clone git@github.com:kevinmirc/angular-material-starter.git .
+git clone git@github.com:kevinmirc/node-api-starter.git .
 
 #Delete git history:
 rm -rf .git
